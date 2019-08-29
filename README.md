@@ -56,12 +56,12 @@ Endpoint: `http://testfrontend.pontte.com.br/`
 }
 ```
 
-- O número de box e os valores de meses tem que ser montado de acordo com a propriedade prazos
-- O valor do empréstimo bruto corresponde a mesma posição do valor do empréstimo selecionado. Ex: Se o valor do empréstimo selecionado for o segundo (`valoresEmprestimo[1]`) , o valor bruto sera a segunda posição (`valoresEmprestimeBruto[1]`)
-- As parcelas estão separadas primeiramente de acordo com o prazo, então se foi selecionado o primeiro prazo, o valor da parcela estará na primeira posição e os valores das parcelas de casa prazo estão separados de acordo com o valor do empréstimo selecionado. Ex: se o usuário selecionou o 2 valor e o primeiro prazo o valor correto da parcela estaria em `parcelas[1][0]`.
+- O número de box e os valores de meses devem ser montados de acordo com a propriedade `prazos`
+- O valor do empréstimo bruto corresponde a mesma posição do valor do empréstimo selecionado. Ex.: Se o valor do empréstimo selecionado for o segundo (`valoresEmprestimo[1]`), o valor bruto sera a segunda posição (`valoresEmprestimeBruto[1]`)
+- As parcelas estão separadas primeiramente de acordo com o prazo, então se foi selecionado o primeiro prazo, o valor da parcela estará na primeira posição e os valores das parcelas de cada prazo estão separados de acordo com o valor do empréstimo selecionado. Ex.: Se o usuário selecionou o 2 valor e o primeiro prazo, o valor correto da parcela estaria em `parcelas[1][0]`.
 
 ## 4. Diferencial
-- Aplicação de um layoutreponsivel
+- Aplicação de um layout reponsivel
 - Uso de Redux.
 - Documentação do código e componentes.
 - Testes unitários e ou de integração.
