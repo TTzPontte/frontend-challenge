@@ -17,12 +17,12 @@ Os dados tem que ser coletados do endpoint http://testfrontend.pontte.com.br/.
 ![Layout](./image/screen.png)
 
 ## 4. Descrição do Layout
-- O valor com a fonte maior, corresponde ao valor do empréstimo e o valor a baixo representa o valor bruto do empréstimo.
-- A barra corresponde ao valor do empréstimo pode conter X steps de acordo com a quantidade de valores possível. Seu comportamento é parecido com o input com o type range.
+- O valor com a fonte maior, corresponde ao valor do empréstimo e o valor abaixo representa o valor bruto do empréstimo.
+- A barra corresponde ao valor do empréstimo e pode conter X steps de acordo com a quantidade de valores possível. Seu comportamento é parecido com o input com o type range.
 - Os números nas laterais abaixo da barra são referentes ao menor e o maior valor possível de empréstimo.
-- Existe a possibilidade de ter ate 5 box correspondentes as possibilidade te tempo do empréstimo, e podendo ter no mínimo 1 de acordo com os dados.
-- Os valores das parcelas de cada mês têm que ser formatado em real.
-- Ao selecionar um valor de empréstimo, tem que ser atualizados os valores acima da barra e os valores das parcelas.
+- Existe a possibilidade de ter até 5 box correspondentes às possibilidades de tempo do empréstimo, e podendo ter no mínimo 1 de acordo com os dados.
+- Os valores das parcelas de cada mês têm que ser formatados em real.
+- Ao selecionar um valor de empréstimo, devem que ser atualizados os valores acima da barra e os valores das parcelas.
 - O botão "Gostei, continuar" deve ser somente habilitado quando o usuário selecionar um valor e uma parcela.
 
 ## 5. Descrição do endpoint
@@ -61,7 +61,7 @@ Endpoint: `http://testfrontend.pontte.com.br/`
 - As parcelas estão separadas primeiramente de acordo com o prazo, então se foi selecionado o primeiro prazo, o valor da parcela estará na primeira posição e os valores das parcelas de cada prazo estão separados de acordo com o valor do empréstimo selecionado. Ex.: Se o usuário selecionou o 2 valor e o primeiro prazo, o valor correto da parcela estaria em `parcelas[1][0]`.
 
 ## 4. Diferencial
-- Aplicação de um layout reponsivel
+- Aplicação de um layout responsivo.
 - Uso de Redux.
 - Documentação do código e componentes.
-- Testes unitários e ou de integração.
+- Testes unitários e/ou de integração.
